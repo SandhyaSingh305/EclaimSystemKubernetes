@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: eclaim
+spec:
+  template:
+    spec:
+      containers:
+      - image: sandhyasingh305/eclaim:v4
